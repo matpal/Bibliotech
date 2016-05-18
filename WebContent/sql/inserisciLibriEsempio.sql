@@ -1,0 +1,10 @@
+USE PSM;
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8884907918","Io uccido","Giorgio Faletti","Dalai Editore","narrativa",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8845278654","Il nome della rosa","Umberto Eco","Bompiani","narrativa storica",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8807901838","Dracula","Bram Stoker","Feltrinelli","narrativa horror e gotica",0);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8817084379","La Targa","Andrea Camilleri","Rizzoli","narrativa contemporanea",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("0996062815","Python 101","Michael Driscoll","Michael Driscoll","manualistica",1);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8820058278","La vigna di Angelica","Sveva Casati Modignani","Sperling & Kupfer","narrativa rosa",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8807031310","La Sposa giovane","Alessandro Baricco","Feltrinelli","narrativa contemporanea",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8804647132","I misteri della montagna","Mauro Corona","Mondadori","narrativa contemporanea",5);
+INSERT INTO Libri(isbn,titolo,autore,editore,genere,quantita)VALUES("8866320323","L'amica geniale","Elena Ferrante","E/O","narrativa contemporanea",5);

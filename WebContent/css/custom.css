@@ -1,0 +1,284 @@
+/* 
+    Document   : custom
+    Author     : Matteo Palumbo <matteopalumbo at mail.com>
+*/
+*{
+    margin:0;
+    padding:0;
+}
+
+
+@font-face{
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand/Quicksand-Regular.ttf");
+}
+
+body{
+    font-family: Quicksand, "Comic Sans";
+    background:url('../img/paper.jpg') repeat-y ;
+    background-size: 100%;
+}
+
+i{
+    margin-right:5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    width:900px;
+    margin:50px auto;
+    background-color:white;
+    margin-bottom:50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px 5px #aaaaaa;
+    display:none;
+}
+
+#header{
+    width:100%;
+    height:100px;
+    background-color: #339966;
+    color:white;
+    line-height: 30px;
+}
+
+#header img{
+	padding:10px;
+}
+
+nav{
+    background-color: #339966;
+    position:relative;
+    height:40px;
+}
+
+nav a{
+    text-decoration:none;
+    font-size:16px;
+    color: white;
+    padding:10px 20px;
+}
+
+nav a:hover{
+    background-color:white;
+    color:#339966;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.nav-box{
+    text-align: center;
+    position:absolute;
+    right:20px;
+    margin-top:5px;
+    background-color:#339966;
+    border:2px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#box-login{
+    display:none;
+    z-index:10;
+    width:250px;
+}
+
+input{
+    background-color: white;
+    border: 2px green outset;
+    padding:5px;
+    margin:0;
+    text-align:center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius:10px;
+}
+
+.frm-control{
+    background-color:#339966;
+    color:white;
+    font-size:18px;
+    padding:10px;
+    margin:20px 0;
+    border:2px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius:10px;
+}
+.frm-control:hover{
+    background-color:white;
+    color:#339966;
+    border:2px solid #339966;
+}
+
+#box-iscrizione{
+    display:block;
+    font-style: italic;
+    padding:10px;
+}
+
+#box-iscrizione .normal-font{
+    font-style: normal;
+}
+
+.home-box{
+    width: 250px;
+    min-height: 200px;
+    background-color:#339966;
+    color:white;
+    display:inline-block;
+    margin:30px;
+    padding:10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius:5px;
+}
+
+.home-box h3{
+    font-style: italic;
+    font-size:24px;
+    text-align:center;
+    padding:20px;
+}
+
+.column{
+    width: 200px;
+    min-height: 200px;
+    display:inline-block;
+    margin:30px;
+    padding:10px;
+    vertical-align:middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius:5px;
+}
+
+.column a{
+    text-decoration:none;
+    color:black;
+}
+
+.column i{
+    display:inline;
+    color:#339966
+}
+
+.column h3{
+    display:block;
+    font-style: italic;
+    font-size:24px;
+    text-align:center;
+}
+
+.row {
+    position:relative;
+    padding:30px;
+}
+
+.row img{
+    max-width:100%;
+    height:auto;
+}
+
+.row h3{
+    font-style: italic;
+    font-size:24px;
+    color:#339966;
+}
+
+#poesia{
+    position:absolute;
+    top:120px;
+    left:50px;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,.7);
+    border:1px solid white;
+    color:white;
+    font-size:24px;
+    font-weight: bold;
+    display:none;
+}
+
+#poesia p{
+    font-style: italic;
+    padding:20px;
+    line-height:1.5em;
+}
+
+#poesia em{
+    display:block;
+    padding:0 20px 20px 0;
+    text-align:right;
+    text-decoration:underline;
+}
+
+footer{
+    bottom:30px;
+    width:100%;
+    line-height:30px;
+    background-color:#339966;
+    text-align:center;
+    color:white;
+}
+
+footer p{
+    padding: 10px 0;
+}
+
+.messaggio p {
+    text-align: center;
+    font-size: 24px;
+    background-color: #D2FFD1;
+}
+
+/*TABLE*/
+table{
+    margin:20px 0;
+    text-align:center;
+    border-spacing:0;
+}
+
+
+table td{
+    background-color:#d2ffd2;
+    padding:5px;
+    border-bottom: 2px solid white; 
+}
+table th{
+    padding: 0 10px;
+}
+/*END-TABLE*/
+
+/*UTILS*/
+.right{
+
+    text-align:right;
+    margin-right:20px;
+}
+.nav-links{
+    float:left;
+    margin-left:20px;
+}
+
+.red-text{
+    color:red;
+}
+.green-text{
+    color:rgb(0,155,8);
+}
+
+.statusError {
+    
+    background-color: #FFD1D1;
+}
+.statusOk{
+    background-color: #339966;
+}
+/*END-UTILS*/
