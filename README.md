@@ -3,6 +3,17 @@ Sample web application developed with Java EE technologies
 
 ##Descrizione
 Bibliotech è una web application sviluppata con tencologie JavaEE che simula il sistema di gestione di una biblioteca, implementata seguendo il pattern MVC.
+
+
+##MVC
+L'applicazione segue il pattern MVC (Model-View-Controller) attraverso l'uso di Servlet per la parte Controller, classi Java che rappresentano i Model e file JSP per la View.
+
+![Model View Controller diagram](https://github.com/matpal/Bibliotech/MVC.png)
+
+####Flusso di esecuzione
+Quando l'utente invia una richiesta all'applicazione, questa viene processata da una Servlet. A seconda della richiesta presentata, la Servlet sceglie quale Model interrogare e fornire i risultati così ottenuti alla corrispondente JSP. Infine la JSP, contenente le informazioni passate dalla Servlet, viene inviata all'utente.
+
+##Funzionalità
 L'applicazione fornisce diverse funzionalità tra cui:
 
 - Gestione utenti 
@@ -19,22 +30,11 @@ L'applicazione fornisce diverse funzionalità tra cui:
 - Strumenti di amministrazione
 	- Per gestire utenti, libri e prenotazioni
 
+
 ##Esecuzione
 Per eseguire l'applicazione è necessario un ambiente costituito da un application container e da un database. Durante lo sviluppo è stato utilizzato l'IDE Eclipse, Apache Tomcat 7.x e il database MySQL.
 E' necessario modificare il file `/WebContent/WEB-INF/web.xml` e fornire le informazioni relative al database.
 
 
-##Navigazione
-Il routing per pagine che non richiedono dati in ingresso è gestito dal file `web.xml` che mappa le servlet con le corrispondenti URL.
-
-Per pagine che richiedono dati in input invece è stata definita una servlet chiamata `NavigationController`, che si occupa di reperire dati dal Model, e passarli successivamente alla View. 
-Analogamente, è stata creata una servlet, `AdminController`, che si occupa dello stesso compito, ma solo per le pagine relative agli strumenti di amministrazione dell'applicazione. 
-
-Questa separazione è stata effettuata per marcare meglio la distinzione tra i due compiti e per avere una migliore manutenibilità.
-
-
 ##Tecnologie JavaEE usate
 Servlet, JSP, JDBC, JSTL, Filters, Listeners, Error Pages
-
-###Disclaimer
-Applicazione sviluppata come progetto d'esame. Non è intesa per l'utilizzo in produzione.
