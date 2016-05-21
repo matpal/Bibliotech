@@ -8,7 +8,7 @@ Bibliotech è una web application sviluppata con tencologie JavaEE che simula il
 ##MVC
 L'applicazione segue il pattern MVC (Model-View-Controller) attraverso l'uso di Servlet per la parte Controller, classi Java che rappresentano i Model e file JSP per la View.
 
-![Model View Controller diagram](https://github.com/matpal/Bibliotech/MVC.png)
+![Model View Controller diagram](https://github.com/matpal/Bibliotech/blob/master/MVC.png)
 
 ####Flusso di esecuzione
 Quando l'utente invia una richiesta all'applicazione, questa viene processata da una Servlet. A seconda della richiesta presentata, la Servlet sceglie quale Model interrogare e fornire i risultati così ottenuti alla corrispondente JSP. Infine la JSP, contenente le informazioni passate dalla Servlet, viene inviata all'utente.
@@ -16,7 +16,7 @@ Quando l'utente invia una richiesta all'applicazione, questa viene processata da
 ##Funzionalità
 L'applicazione fornisce diverse funzionalità tra cui:
 
-- Gestione utenti 
+- Gestione utenti
 	- Registrazione, sistema di login/logout, modifica delle informazioni, diverse tipologie di utenza
 - Ricerca libri
 	- Per titolo, autore e genere
